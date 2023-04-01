@@ -27,6 +27,7 @@ def my_slice(coll, start=0, end=None):
     Если индекс отрицательный, end указывает смещение от конца списка. По умолчанию равен длине исходного списка.
     :return: массив элементов
     """
+    coll = list(coll)
     length = len(coll)
 
     if length == 0:
